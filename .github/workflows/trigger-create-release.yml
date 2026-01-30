@@ -8,5 +8,6 @@ on:
 jobs:
   call-create-release:
     uses: engineering-organization/gha-actions/.github/workflows/create-release.yml@main
+    secrets: inherit
     with:
       tag: ${{ github.event.inputs.tag }}
