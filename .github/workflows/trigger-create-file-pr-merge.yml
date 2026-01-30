@@ -20,10 +20,8 @@ on:
 jobs:
   call-reusable:
     uses: engineering-organization/gha-actions/.github/workflows/create-file-pr-merge.yml@main
+    secrets: inherit
     with:
       filename: ${{ inputs.filename }}
       file_content: ${{ inputs.file_content }}
       base_branch: ${{ inputs.base_branch }}
-    secrets:
-      APP_ID: ${{ secrets.APP_ID }}
-      APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
