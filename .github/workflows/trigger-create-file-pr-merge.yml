@@ -1,5 +1,5 @@
 # test-repository-1/.github/workflows/call-reusable-create-file.yml
-name: trigger—create-file-PR-and-merge
+name: trigger-create-file-pr-and-merge
 
 on:
   workflow_dispatch:
